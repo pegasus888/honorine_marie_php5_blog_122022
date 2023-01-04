@@ -94,8 +94,8 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                <i class="bi bi-bookmark"></i>
-                Category
+                <i class="bi bi-envelope-at"></i>
+                Subscriber
                 </a>
             </li>
             <li class="nav-item">
@@ -106,42 +106,15 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                <i class="bi bi-person"></i>
-                User
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
                 <i class="bi bi-chat-text"></i>
                 Comment
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                <i class="bi bi-book"></i>
-                Page
-                </a>
-            </li>
-            </ul>
-
-            <ul class="nav flex-column mb-2">
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                <i class="bi bi-envelope"></i>
-                Suscriber
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                <i class="bi bi-images"></i>
-                Gallery
-                </a>
-            </li>
             </ul>
             <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase">
-            <span>Front End</span>
+            <span>Home</span>
             <a class="link-secondary" href="home.php" aria-label="Add a new report">
-            <i class="bi bi-globe"></i>
+            <i class="bi bi-house"></i>
             </a>
             </h6>
         </div>
@@ -161,7 +134,7 @@
             </button>
             </div>
         </div>
-
+            content area
         </main>
     </div>
     </div>

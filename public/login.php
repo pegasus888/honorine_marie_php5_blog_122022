@@ -69,10 +69,10 @@
 
 <main class="form-signin w-100 m-auto">
 <form method="post">
-<img class="mb-4 rounded-circle shadow" src="assets/images/blog_logo-min.webp" alt="" width="92" height="92" style="object-fit: cover;">
+<img class="mb-4 rounded-circle shadow" src="assets/images/blog_php5_logo.webp" alt="" width="120" height="120" style="object-fit: cover;">
 <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
-<div class="form-floating">
+<div class="form-floating mb-2">
     <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
     <label for="floatingInput">Email address</label>
 </div>
@@ -88,7 +88,7 @@
     </label>
 </div>
 <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-<p class="mt-5 mb-3 text-muted">&copy; <?= date("Y")?></p>
+<p class="mt-5 mb-3 text-muted">&copy; <?= date("Y")?> Webdev23 | All Rights Reserved</p>
 </form>
 </main>
 
