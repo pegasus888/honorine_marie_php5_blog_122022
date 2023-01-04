@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <title>Home - My Blog</title>
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
+    <link href="<?=ROOT?>/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?=ROOT?>/assets/css/bootstrap-icons.css" rel="stylesheet">
 
         <style>
         .bi {
@@ -70,7 +70,7 @@
         </style>
 
         <!-- End Custom styles for this template -->
-        <link href="assets/css/headers.css" rel="stylesheet">
+        <link href="<?=ROOT?>/assets/css/headers.css" rel="stylesheet">
     </head>
     <body>
 
@@ -79,7 +79,7 @@
         <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
-            <img class="bi me-2 rounded-circle shadow" src="assets/images/blog_php5_logo.webp" width="60" height="52" style="object-fit: cover;">
+            <img class="bi me-2 rounded-circle shadow" src="<?=ROOT?>/assets/images/blog_php5_logo.webp" width="60" height="52" style="object-fit: cover;">
             </a>
 
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
@@ -110,26 +110,26 @@
     </header>
 
     <!-- Slider -->
-    <link rel="stylesheet" href="assets/slider/ism/css/my-slider.css"/>
-    <script src="assets/slider/ism/js/ism-2.2.min.js"></script>
+    <link rel="stylesheet" href="<?=ROOT?>/assets/slider/ism/css/my-slider.css"/>
+    <script src="<?=ROOT?>/assets/slider/ism/js/ism-2.2.min.js"></script>
 
     <div class="ism-slider" data-transition_type="fade" data-play_type="once" data-image_fx="zoompan" id="my-slider">
     <ol>
         <li>
         <a href="" target="_blank">
-        <img src="assets/slider/ism/image/slides/statue-of-liberty-267948_1280.jpg">
+        <img src="<?=ROOT?>/assets/slider/ism/image/slides/statue-of-liberty-267948_1280.jpg">
         <a class="ism-caption ism-caption-2" href="" target="_blank" data-delay='500'>Webdev23</a>
         </a>
         </li>
         <li>
         <a href="" target="_blank">
-        <img src="assets/slider/ism/image/slides/woodland-656969_1280.jpg">
+        <img src="<?=ROOT?>/assets/slider/ism/image/slides/woodland-656969_1280.jpg">
         <a class="ism-caption ism-caption-2" href="" target="_blank" data-delay='500'>Dernier Article</a>
         </a>
         </li>
         <li>
         <a href="" target="_blank">
-        <img src="assets/slider/ism/image/slides/budapest-655216_1280.jpg">
+        <img src="<?=ROOT?>/assets/slider/ism/image/slides/budapest-655216_1280.jpg">
         <a class="ism-caption ism-caption-2" href="" target="_blank" data-delay='500'>Liste des Articles</a>
         </a>
         </li>
@@ -148,12 +148,12 @@
     <footer class="py-5">
         <div class="row">
         <div class="col-6 col-md-2 mb-3">
-            <h5 class="mx-4">Section</h5>
+            <h5 class="mx-4">Liens</h5>
             <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Accueil</a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Liste des Articles</a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Dernier Article</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Se connecter</a></li>
+            <li class="nav-item mb-2"><a href="<?=ROOT?>/login" class="nav-link p-0 text-muted">Se connecter</a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Admin</a></li>
             </ul>
         </div>
@@ -182,7 +182,7 @@
     </footer>
     </div>
 
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="<?=ROOT?>/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     </body>
 </html>

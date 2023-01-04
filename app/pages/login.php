@@ -6,7 +6,7 @@
 <meta name="description" content="">
 <title>Login - My Blog</title>
 
-<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="<?=ROOT?>/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
     .bd-placeholder-img {
@@ -63,13 +63,15 @@
 
 
 <!-- Custom styles for this template -->
-<link href="assets/css/sign-in.css" rel="stylesheet">
+<link href="<?=ROOT?>/assets/css/sign-in.css" rel="stylesheet">
 </head>
 <body class="text-center">
 
 <main class="form-signin w-100 m-auto">
 <form method="post">
-<img class="mb-4 rounded-circle shadow" src="assets/images/blog_php5_logo.webp" alt="" width="120" height="120" style="object-fit: cover;">
+    <a href="home">
+        <img class="mb-4 rounded-circle shadow" src="<?=ROOT?>/assets/images/blog_php5_logo.webp" alt="" width="120" height="120" style="object-fit: cover;">
+    </a>
 <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
 <div class="form-floating mb-2">
@@ -81,7 +83,7 @@
     <label for="floatingPassword">Password</label>
 </div>
 
-<div class="my-2">No account? <a href="signup.php">Create one!</a></div>
+<div class="my-2">No account? <a href="<?=ROOT?>/signup">Create one!</a></div>
 <div class="checkbox mb-3">
     <label>
     <input name="remember" type="checkbox" value="1"> Remember me
