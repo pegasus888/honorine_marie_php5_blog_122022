@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
-        <title>Home - My Blog</title>
+        <title>Home - <?=APP_NAME?></title>
     <link href="<?=ROOT?>/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?=ROOT?>/assets/css/bootstrap-icons.css" rel="stylesheet">
 
@@ -154,7 +154,7 @@
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Liste des Articles</a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Dernier Article</a></li>
             <li class="nav-item mb-2"><a href="<?=ROOT?>/login" class="nav-link p-0 text-muted">Se connecter</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Admin</a></li>
+            <li class="nav-item mb-2"><a href="<?=ROOT?>/admin" class="nav-link p-0 text-muted">Admin</a></li>
             </ul>
         </div>
 

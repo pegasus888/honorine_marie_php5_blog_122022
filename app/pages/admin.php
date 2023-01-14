@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
-        <title>Admin - My Blog</title>
+        <title>Admin - <?=APP_NAME?></title>
 
         <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
@@ -113,7 +113,7 @@
             </ul>
             <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase">
             <span>Home</span>
-            <a class="link-secondary" href="home.php" aria-label="Add a new report">
+            <a class="link-secondary" href="<?=ROOT?>/home" aria-label="Add a new report">
             <i class="bi bi-house"></i>
             </a>
             </h6>

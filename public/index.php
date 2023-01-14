@@ -1,7 +1,7 @@
 <?php
 
-//Define a constant (available everywhere) for the base folder, 'root', 'value'
-define('ROOT', 'http://localhost/blog/public');
+// As everything is loaded in init.php we have to require this file here
+require "../app/core/init.php";
 
 
 // Redirect any url to home
