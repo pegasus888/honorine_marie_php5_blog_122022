@@ -76,7 +76,7 @@
     <input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Search" aria-label="Search">
     <div class="navbar-nav">
         <div class="nav-item text-nowrap">
-        <a class="nav-link px-3" href="#">Sign out</a>
+        <a class="nav-link px-3" href="<?=ROOT?>/logout">Sign out</a>
         </div>
     </div>
     </header>
@@ -87,7 +87,7 @@
         <div class="position-sticky pt-3 sidebar-sticky">
             <ul class="nav flex-column">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <a class="nav-link active" aria-current="page" href="<?=ROOT?>/admin">
                 <i class="bi bi-person-circle"></i>
                 Admin
                 </a>

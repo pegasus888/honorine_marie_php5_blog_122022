@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 // As everything is loaded in init.php we have to require this file here
 require "../app/core/init.php";
 

@@ -20,6 +20,7 @@ function query(string $query, array $data = [])
 
 }
 
+
 // Redirect signup page to login page
 function redirect($page)
 {
@@ -49,6 +50,23 @@ function old_checked($key, $default = '')
 }
 
 
+// login page ->
+function authenticate($row)
+{
+	$_SESSION['USER'] = $row;
+}
+
+
+// login page -> Check if a user is really authenticated: logged in
+function logged_in()
+{
+	if(!empty($_SESSION['USER']))
+		return true;
+
+	return false;
+}
+
+
 //create_tables();
 function create_tables()
 {
@@ -57,6 +75,7 @@ function create_tables()
     $con = new PDO($string, DBUSER, DBPASS);
 
     //print_r($con); (to print "PDO Object()" on index.php page)
+
 
     // Create a DB if not exists: myblog_db
 	$query = "create database if not exists ". DBNAME;
@@ -67,6 +86,7 @@ function create_tables()
 	$query = "use ". DBNAME;
 	$stm = $con->prepare($query);
 	$stm->execute();
+
 
     // Create table "users" if not exists
     $query = "create table if not exists users(
