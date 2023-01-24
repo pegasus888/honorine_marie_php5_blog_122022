@@ -1,9 +1,0 @@
-tables
-users
-id username email password date role
-
-categories
-id category slug disabled
-
-posts
-id user_id category_id title content image date slug

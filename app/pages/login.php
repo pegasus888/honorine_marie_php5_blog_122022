@@ -1,3 +1,10 @@
+<?php
+    if(!empty($_POST))
+    {
+        echo "something was posted";
+    }
+?>
+
 <!doctype html>
 <html lang="en">
 <head>

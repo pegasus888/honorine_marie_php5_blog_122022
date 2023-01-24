@@ -20,6 +20,34 @@ function query(string $query, array $data = [])
 
 }
 
+// Redirect signup page to login page
+function redirect($page)
+{
+
+	header('Location: '.ROOT. '/' . $page);
+	die;
+}
+
+
+// Signup page -> to retrieve all the information (text will not disappear signing up)
+function old_value($key, $default = '')
+{
+	if(!empty($_POST[$key]))
+		return $_POST[$key];
+
+	return $default;
+}
+
+
+// Signup page ->
+function old_checked($key, $default = '')
+{
+	if(!empty($_POST[$key]))
+		return " checked ";
+
+	return "";
+}
+
 
 //create_tables();
 function create_tables()
