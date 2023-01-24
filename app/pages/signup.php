@@ -98,7 +98,11 @@
     </label>
 </div>
 <button class="w-100 btn btn-lg btn-primary" type="submit">Create</button>
-<p class="mt-5 mb-3 text-muted">&copy; <?php echo date("Y")?> Webdev23 | All Rights Reserved</p>
+<p class="mt-5 mb-3 text-muted">&copy;
+    <?php
+    //error_reporting(-1);
+    echo date("Y")?> Webdev23 | All Rights Reserved
+</p>
 </form>
 </main>
 

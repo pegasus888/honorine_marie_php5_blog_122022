@@ -5,7 +5,7 @@ if($_SERVER['SERVER_NAME'] == "localhost")
 {
 	// Connection values:
     define('DBUSER',"root");
-	define('DBPASS',"");
+	define('DBPASS',"root");
 	define('DBNAME',"myblog_db");
 	define('DBHOST',"localhost");
 
@@ -13,7 +13,7 @@ if($_SERVER['SERVER_NAME'] == "localhost")
     // website version
 {
 	define('DBUSER',"root");
-	define('DBPASS',"");
+	define('DBPASS',"root");
 	define('DBNAME',"myblog_db");
 	define('DBHOST',"localhost");
 }
