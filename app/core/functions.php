@@ -19,7 +19,7 @@ function create_tables()
 	$stm = $con->prepare($query);
 	$stm->execute();
 
-    // Create table "users" if not exists: myblog_db
+    // Create table "users" if not exists
     $query = "create table if not exists users(
 
         id int primary key auto_increment,
@@ -32,6 +32,42 @@ function create_tables()
 
         key username (username),
         key email (email)
+    )";
+	$stm = $con->prepare($query);
+	$stm->execute();
+
+
+    // Create table "posts" if not exists
+    $query = "create table if not exists posts(
+
+		id int primary key auto_increment,
+		user_id int,
+		title varchar(100) not null,
+		content text null,
+		image varchar(1024) null,
+		date datetime default current_timestamp,
+		slug varchar(100) not null,
+
+		key user_id (user_id),
+		key title (title),
+		key slug (slug),
+		key date (date)
+    )";
+    $stm = $con->prepare($query);
+    $stm->execute();
+
+
+    // Create table "comments" if not exists
+    $query = "create table if not exists comments(
+
+        id int primary key auto_increment,
+        title varchar(100) not null,
+		content text null,
+		slug varchar(100) not null,
+		disabled tinyint default 0,
+
+        key title (title),
+		key slug (slug)
     )";
 	$stm = $con->prepare($query);
 	$stm->execute();
