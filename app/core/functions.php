@@ -1,10 +1,31 @@
 <?php
 
-create_tables();
+// Running DB Queries
+function query(string $query, array $data = [])
+{
+
+    $string = "mysql:hostname=".DBHOST.";dbname=". DBNAME;
+    $con = new PDO($string, DBUSER, DBPASS);
+
+	$stm = $con->prepare($query);
+	$stm->execute($data);
+
+    $result = $stm->fetchAll(PDO::FETCH_ASSOC);
+	if(is_array($result) && !empty($result))
+	{
+		return $result;
+	}
+
+	return false;
+
+}
+
+
+//create_tables();
 function create_tables()
 {
     // Make a connection with a DB using a PDO Object
-    $string = "mysql:hostname=localhost;";
+    $string = "mysql:hostname=".DBHOST.";";
     $con = new PDO($string, DBUSER, DBPASS);
 
     //print_r($con); (to print "PDO Object()" on index.php page)
@@ -43,6 +64,7 @@ function create_tables()
 		id int primary key auto_increment,
 		user_id int,
 		title varchar(100) not null,
+        headline text null,
 		content text null,
 		image varchar(1024) null,
 		date datetime default current_timestamp,
