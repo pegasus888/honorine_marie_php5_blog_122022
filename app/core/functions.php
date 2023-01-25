@@ -21,6 +21,27 @@ function query(string $query, array $data = [])
 }
 
 
+// Just return a single result (one row)
+function query_row(string $query, array $data = [])
+{
+
+	$string = "mysql:hostname=".DBHOST.";dbname=". DBNAME;
+	$con = new PDO($string, DBUSER, DBPASS);
+
+	$stm = $con->prepare($query);
+	$stm->execute($data);
+
+	$result = $stm->fetchAll(PDO::FETCH_ASSOC);
+	if(is_array($result) && !empty($result))
+	{
+		return $result[0];
+	}
+
+	return false;
+
+}
+
+
 // Redirect signup page to login page
 function redirect($page)
 {
@@ -50,6 +71,20 @@ function old_checked($key, $default = '')
 }
 
 
+// Users page: get image
+function get_image($file)
+{
+	$file = $file ?? '';
+	if(file_exists($file))
+	{
+		return ROOT.'/'.$file;
+	}
+
+	return ROOT.'/assets/images/no_image.jpg';
+}
+
+
+
 // Url friendly: creating slug from title & so on
 function str_to_url($url)
 {
@@ -72,6 +107,13 @@ function str_to_url($url)
 	$url = preg_replace('~[^-a-z0-9_]+~', '', $url);
 
 	return $url;
+}
+
+
+// Users page (clean up the name, html)
+function esc($str)
+{
+	return htmlspecialchars($str ?? '');
 }
 
 
