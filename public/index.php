@@ -9,6 +9,10 @@ require "../app/core/init.php";
 // Redirect any url to home
 $url = $_GET['url'] ?? 'home';
 
+
+$url = strtolower($url);
+
+
 // Explode the url (= will create an array with individual items)
 $url = explode("/", $url);
 

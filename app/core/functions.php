@@ -50,6 +50,31 @@ function old_checked($key, $default = '')
 }
 
 
+// Url friendly: creating slug from title & so on
+function str_to_url($url)
+{
+	// Replaces quotes from a particular string with an empty string
+	$url = str_replace("'", "", $url);
+
+	// Removes all symbols from a particular string & replaces them with a dash
+	$url = preg_replace('~[^\\pL0-9_]+~u', '-', $url);
+
+	// Trims all dashes at the beginning & the end of the string
+	$url = trim($url, "-");
+
+	// Convert it to utf-8
+	$url = iconv("utf-8", "us-ascii//TRANSLIT", $url);
+
+	// Change it to a lower string
+	$url = strtolower($url);
+
+	// Replaces anything that does not match any of these (like any characters from other languages)
+	$url = preg_replace('~[^-a-z0-9_]+~', '', $url);
+
+	return $url;
+}
+
+
 // login page ->
 function authenticate($row)
 {
