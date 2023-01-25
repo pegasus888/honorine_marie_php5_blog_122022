@@ -233,7 +233,7 @@
         $rows = query($query);
     ?>
 
-    // Look through each row to see if not empty & add what's needed
+    <!-- Look through each row to see if not empty & add what's needed-->
     <?php if(!empty($rows)):?>
         <?php foreach($rows as $row):?>
         <tr>

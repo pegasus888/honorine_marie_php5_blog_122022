@@ -22,6 +22,10 @@ $page_name = trim($url[0]);
 // Then we need to construct a file (.php because looking for a php file!)
 $filename = "../app/pages/".$page_name.".php";
 
+
+// Set pagination vars
+$PAGE = get_pagination_vars();
+
 // Need to check if the file exist
 if(file_exists($filename))
 {
