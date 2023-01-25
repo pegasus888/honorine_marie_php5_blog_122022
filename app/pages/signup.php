@@ -54,7 +54,7 @@
         $data = [];
         $data['username'] = $_POST['username'];
         $data['email']    = $_POST['email'];
-        $data['role']     = "admin";
+        $data['role']     = "user";
         $data['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
         $query = "insert into users (username,email,password,role) values (:username,:email,:password,:role)";

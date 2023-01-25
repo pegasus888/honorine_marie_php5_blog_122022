@@ -219,6 +219,7 @@
         <th>#</th>
         <th>Username</th>
         <th>Email</th>
+        <th>Password</th>
         <th>Role</th>
         <th>Image</th>
         <th>Date</th>
@@ -239,6 +240,7 @@
             <td><?=$row['id']?></td>
             <td><?=esc($row['username'])?></td>
             <td><?=$row['email']?></td>
+            <td><?=$row['password']?></td>
             <td><?=$row['role']?></td>
             <td>
                 <img src="<?=get_image($row['image'])?>" style="width: 100px;height: 100px;object-fit: cover;">
